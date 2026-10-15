@@ -15,7 +15,7 @@ The project is currently in P1: Proposal and Requirements. The team is defining 
 
 ## Project Documents
 
-- [Shared working document](PASTE_GOOGLE_DOC_URL_HERE)
+- [Shared working document](https://docs.google.com/document/d/16Q5a5kx3WgLXgeA7EKyivxxjzgiA-b6S/edit?usp=sharing&ouid=117389779057476000695&rtpof=true&sd=true)
 - Milestone document snapshots and the final P1 PDF will be stored in `docs/p1/`.
 
 The Google Doc is our collaborative working draft. Repository copies record milestone versions. The team will verify that the instructor can access both.
