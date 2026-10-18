@@ -11,7 +11,7 @@ Occupancy reports include timestamps. Reports may be outdated or inaccurate, so 
 
 ## Current Status
 
-The project is currently in P1: Proposal and Requirements. The team is defining the system’s scope, stakeholders, requirements, use cases, and project plan.
+P1 has been completed.
 
 ## Project Documents
 
