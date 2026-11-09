@@ -1,0 +1,1236 @@
+{
+  "run_utc": "2026-11-09T00:07:10.981875+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+  },
+  "method": "100 HTTP requests through ten worker threads to a local server; SQLite disposable surrogate; no browser or PostgreSQL",
+  "total_requests": 100,
+  "workers": 10,
+  "persisted_and_verified": 100,
+  "http_successes": 100,
+  "http_successes_within_3s": 100,
+  "average_http_ms": 26.15,
+  "p95_http_ms": 132.227,
+  "checks": {
+    "100 acknowledged reports match persisted rows": true,
+    "100 unique increasing acceptance orders": true,
+    "failed write rolls back without accepting report": true,
+    "three invalid submissions rejected without new rows": true,
+    "equal timestamps resolved by acceptance order": true,
+    "3599 seconds remains reported": true,
+    "3600 seconds becomes Unknown and retains timestamp": true,
+    "missing report becomes Unknown": true
+  },
+  "all_checks_passed": true,
+  "qas01_verified": false,
+  "limitations": [
+    "No browser rendering or visible confirmation measured",
+    "No PostgreSQL transaction or deployed hosting validation",
+    "SQLite serializes all writes, whereas planned design coordinates acceptance per room",
+    "Expiration tested with supplied times, not live browser timers"
+  ],
+  "requests": [
+    {
+      "request": 0,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 15,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6741414
+      },
+      "latency_ms": 49.31945899988932,
+      "ok": true
+    },
+    {
+      "request": 1,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 94,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8688905
+      },
+      "latency_ms": 243.24224799966032,
+      "ok": true
+    },
+    {
+      "request": 2,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 41,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7449067
+      },
+      "latency_ms": 118.8942959997803,
+      "ok": true
+    },
+    {
+      "request": 3,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 16,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6757145
+      },
+      "latency_ms": 49.229960999582545,
+      "ok": true
+    },
+    {
+      "request": 4,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 34,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7186213
+      },
+      "latency_ms": 101.2320620002356,
+      "ok": true
+    },
+    {
+      "request": 5,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 1,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6402483
+      },
+      "latency_ms": 13.53357700008928,
+      "ok": true
+    },
+    {
+      "request": 6,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 2,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6431098
+      },
+      "latency_ms": 15.298330000405258,
+      "ok": true
+    },
+    {
+      "request": 7,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 100,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.9702628
+      },
+      "latency_ms": 342.0457130005161,
+      "ok": true
+    },
+    {
+      "request": 8,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 3,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6453826
+      },
+      "latency_ms": 15.920982000352524,
+      "ok": true
+    },
+    {
+      "request": 9,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 75,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8210533
+      },
+      "latency_ms": 191.65381400034676,
+      "ok": true
+    },
+    {
+      "request": 10,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 6,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6530502
+      },
+      "latency_ms": 11.949109999477514,
+      "ok": true
+    },
+    {
+      "request": 11,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 4,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6475043
+      },
+      "latency_ms": 4.270316000656749,
+      "ok": true
+    },
+    {
+      "request": 12,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 26,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7013826
+      },
+      "latency_ms": 55.953316999875824,
+      "ok": true
+    },
+    {
+      "request": 13,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 5,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6500692
+      },
+      "latency_ms": 3.827832000752096,
+      "ok": true
+    },
+    {
+      "request": 14,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 7,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6554103
+      },
+      "latency_ms": 3.928873999939242,
+      "ok": true
+    },
+    {
+      "request": 15,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 22,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.688909
+      },
+      "latency_ms": 36.04496500065579,
+      "ok": true
+    },
+    {
+      "request": 16,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 8,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6578815
+      },
+      "latency_ms": 2.232562999779475,
+      "ok": true
+    },
+    {
+      "request": 17,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 9,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6601741
+      },
+      "latency_ms": 3.4566129997983808,
+      "ok": true
+    },
+    {
+      "request": 18,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 10,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.663509
+      },
+      "latency_ms": 2.2679000003336114,
+      "ok": true
+    },
+    {
+      "request": 19,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 11,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6658669
+      },
+      "latency_ms": 2.2514709999086335,
+      "ok": true
+    },
+    {
+      "request": 20,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 12,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6681576
+      },
+      "latency_ms": 2.375261999986833,
+      "ok": true
+    },
+    {
+      "request": 21,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 13,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.670356
+      },
+      "latency_ms": 2.0956320004188456,
+      "ok": true
+    },
+    {
+      "request": 22,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 14,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.672543
+      },
+      "latency_ms": 2.073218999612436,
+      "ok": true
+    },
+    {
+      "request": 23,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 67,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8042672
+      },
+      "latency_ms": 132.22746399969765,
+      "ok": true
+    },
+    {
+      "request": 24,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 17,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6779654
+      },
+      "latency_ms": 4.055009000694554,
+      "ok": true
+    },
+    {
+      "request": 25,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 24,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6968691
+      },
+      "latency_ms": 20.938894000209984,
+      "ok": true
+    },
+    {
+      "request": 26,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 18,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6803668
+      },
+      "latency_ms": 2.0875160007562954,
+      "ok": true
+    },
+    {
+      "request": 27,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 19,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.682701
+      },
+      "latency_ms": 2.577227999609022,
+      "ok": true
+    },
+    {
+      "request": 28,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 20,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6852593
+      },
+      "latency_ms": 2.362704000006488,
+      "ok": true
+    },
+    {
+      "request": 29,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 21,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.687414
+      },
+      "latency_ms": 2.251089999845135,
+      "ok": true
+    },
+    {
+      "request": 30,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 23,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.6910913
+      },
+      "latency_ms": 7.106670000212034,
+      "ok": true
+    },
+    {
+      "request": 31,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 30,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7100852
+      },
+      "latency_ms": 20.805332000236376,
+      "ok": true
+    },
+    {
+      "request": 32,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 35,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7308457
+      },
+      "latency_ms": 37.43810800006031,
+      "ok": true
+    },
+    {
+      "request": 33,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 25,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.6994042
+      },
+      "latency_ms": 2.3523079998994945,
+      "ok": true
+    },
+    {
+      "request": 34,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 27,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7037115
+      },
+      "latency_ms": 4.535490000307618,
+      "ok": true
+    },
+    {
+      "request": 35,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 57,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7824957
+      },
+      "latency_ms": 81.16050899934635,
+      "ok": true
+    },
+    {
+      "request": 36,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 28,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7061546
+      },
+      "latency_ms": 2.1146899998711888,
+      "ok": true
+    },
+    {
+      "request": 37,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 29,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.708233
+      },
+      "latency_ms": 2.190811000218673,
+      "ok": true
+    },
+    {
+      "request": 38,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 31,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.711906
+      },
+      "latency_ms": 4.031901000416838,
+      "ok": true
+    },
+    {
+      "request": 39,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 73,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8166866
+      },
+      "latency_ms": 106.4801600005012,
+      "ok": true
+    },
+    {
+      "request": 40,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 32,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.714782
+      },
+      "latency_ms": 2.314764000402647,
+      "ok": true
+    },
+    {
+      "request": 41,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 33,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7169795
+      },
+      "latency_ms": 2.00901599964709,
+      "ok": true
+    },
+    {
+      "request": 42,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 98,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8978395
+      },
+      "latency_ms": 181.3706809998621,
+      "ok": true
+    },
+    {
+      "request": 43,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 36,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7343903
+      },
+      "latency_ms": 5.6802979997883085,
+      "ok": true
+    },
+    {
+      "request": 44,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 40,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.742838
+      },
+      "latency_ms": 10.90004100024089,
+      "ok": true
+    },
+    {
+      "request": 45,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 37,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7364237
+      },
+      "latency_ms": 2.302777000295464,
+      "ok": true
+    },
+    {
+      "request": 46,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 38,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7390182
+      },
+      "latency_ms": 2.3212239993881667,
+      "ok": true
+    },
+    {
+      "request": 47,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 39,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.741143
+      },
+      "latency_ms": 2.0480229995882837,
+      "ok": true
+    },
+    {
+      "request": 48,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 44,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7517085
+      },
+      "latency_ms": 11.199339999620861,
+      "ok": true
+    },
+    {
+      "request": 49,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 76,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8243504
+      },
+      "latency_ms": 81.84149699991394,
+      "ok": true
+    },
+    {
+      "request": 50,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 42,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7476335
+      },
+      "latency_ms": 2.399703000264708,
+      "ok": true
+    },
+    {
+      "request": 51,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 43,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7500172
+      },
+      "latency_ms": 1.928688000589318,
+      "ok": true
+    },
+    {
+      "request": 52,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 99,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.9309542
+      },
+      "latency_ms": 181.8533750001734,
+      "ok": true
+    },
+    {
+      "request": 53,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 45,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.754668
+      },
+      "latency_ms": 2.3326800001086667,
+      "ok": true
+    },
+    {
+      "request": 54,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 46,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7568276
+      },
+      "latency_ms": 2.2340650002661278,
+      "ok": true
+    },
+    {
+      "request": 55,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 47,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7599046
+      },
+      "latency_ms": 3.621700000621786,
+      "ok": true
+    },
+    {
+      "request": 56,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 48,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7626472
+      },
+      "latency_ms": 2.6191500001004897,
+      "ok": true
+    },
+    {
+      "request": 57,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 49,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7652469
+      },
+      "latency_ms": 2.3563349996038596,
+      "ok": true
+    },
+    {
+      "request": 58,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 50,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.767674
+      },
+      "latency_ms": 2.189380000345409,
+      "ok": true
+    },
+    {
+      "request": 59,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 51,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.769818
+      },
+      "latency_ms": 2.051157000096282,
+      "ok": true
+    },
+    {
+      "request": 60,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 52,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7718542
+      },
+      "latency_ms": 1.9200649994672858,
+      "ok": true
+    },
+    {
+      "request": 61,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 53,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7737174
+      },
+      "latency_ms": 2.062133000436006,
+      "ok": true
+    },
+    {
+      "request": 62,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 54,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.77588
+      },
+      "latency_ms": 2.007742999921902,
+      "ok": true
+    },
+    {
+      "request": 63,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 55,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.777966
+      },
+      "latency_ms": 2.119378000315919,
+      "ok": true
+    },
+    {
+      "request": 64,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 56,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7799678
+      },
+      "latency_ms": 2.377515999796742,
+      "ok": true
+    },
+    {
+      "request": 65,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 61,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7907336
+      },
+      "latency_ms": 10.916844999883324,
+      "ok": true
+    },
+    {
+      "request": 66,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 58,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7850688
+      },
+      "latency_ms": 2.335574000426277,
+      "ok": true
+    },
+    {
+      "request": 67,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 59,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7870739
+      },
+      "latency_ms": 1.792848999684793,
+      "ok": true
+    },
+    {
+      "request": 68,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 60,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7888856
+      },
+      "latency_ms": 2.179655999498209,
+      "ok": true
+    },
+    {
+      "request": 69,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 62,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.792383
+      },
+      "latency_ms": 4.126420000829967,
+      "ok": true
+    },
+    {
+      "request": 70,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 63,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7948377
+      },
+      "latency_ms": 4.207467999549408,
+      "ok": true
+    },
+    {
+      "request": 71,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 78,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.829444
+      },
+      "latency_ms": 37.32068000044819,
+      "ok": true
+    },
+    {
+      "request": 72,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 64,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.7974687
+      },
+      "latency_ms": 2.073700000437384,
+      "ok": true
+    },
+    {
+      "request": 73,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 65,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.7996986
+      },
+      "latency_ms": 2.1631509998769616,
+      "ok": true
+    },
+    {
+      "request": 74,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 66,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8018122
+      },
+      "latency_ms": 2.6126910006496473,
+      "ok": true
+    },
+    {
+      "request": 75,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 71,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8127897
+      },
+      "latency_ms": 10.740827000518038,
+      "ok": true
+    },
+    {
+      "request": 76,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 68,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8068864
+      },
+      "latency_ms": 1.994674000343366,
+      "ok": true
+    },
+    {
+      "request": 77,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 69,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8087993
+      },
+      "latency_ms": 2.2865729997647577,
+      "ok": true
+    },
+    {
+      "request": 78,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 70,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.811186
+      },
+      "latency_ms": 1.9792909997704555,
+      "ok": true
+    },
+    {
+      "request": 79,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 86,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8466923
+      },
+      "latency_ms": 36.51903000081802,
+      "ok": true
+    },
+    {
+      "request": 80,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 72,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8152199
+      },
+      "latency_ms": 2.0053000007465016,
+      "ok": true
+    },
+    {
+      "request": 81,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 74,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8184588
+      },
+      "latency_ms": 3.772461000153271,
+      "ok": true
+    },
+    {
+      "request": 82,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 77,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8271925
+      },
+      "latency_ms": 10.699995999857492,
+      "ok": true
+    },
+    {
+      "request": 83,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 95,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8747582
+      },
+      "latency_ms": 55.95934200027841,
+      "ok": true
+    },
+    {
+      "request": 84,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 84,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8428397
+      },
+      "latency_ms": 20.71097499992902,
+      "ok": true
+    },
+    {
+      "request": 85,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 97,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.880761
+      },
+      "latency_ms": 55.86400199990749,
+      "ok": true
+    },
+    {
+      "request": 86,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 92,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8629882
+      },
+      "latency_ms": 35.51582000000053,
+      "ok": true
+    },
+    {
+      "request": 87,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 79,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8325803
+      },
+      "latency_ms": 2.2460680002041045,
+      "ok": true
+    },
+    {
+      "request": 88,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 80,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.834854
+      },
+      "latency_ms": 2.203770999585686,
+      "ok": true
+    },
+    {
+      "request": 89,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 81,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8371825
+      },
+      "latency_ms": 2.130433000274934,
+      "ok": true
+    },
+    {
+      "request": 90,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 82,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8390927
+      },
+      "latency_ms": 1.8350099999224767,
+      "ok": true
+    },
+    {
+      "request": 91,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 83,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8409834
+      },
+      "latency_ms": 2.1197879996179836,
+      "ok": true
+    },
+    {
+      "request": 92,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 85,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8445294
+      },
+      "latency_ms": 3.7228580004011746,
+      "ok": true
+    },
+    {
+      "request": 93,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 96,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8782434
+      },
+      "latency_ms": 35.574790999817196,
+      "ok": true
+    },
+    {
+      "request": 94,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 93,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8655798
+      },
+      "latency_ms": 20.82081099979405,
+      "ok": true
+    },
+    {
+      "request": 95,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 87,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8496056
+      },
+      "latency_ms": 2.008574999308621,
+      "ok": true
+    },
+    {
+      "request": 96,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 88,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.8516774
+      },
+      "latency_ms": 2.2788010001022485,
+      "ok": true
+    },
+    {
+      "request": 97,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 89,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8543587
+      },
+      "latency_ms": 2.914802999839594,
+      "ok": true
+    },
+    {
+      "request": 98,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 90,
+        "roomIdentifier": "TEST-101",
+        "observation": "Empty",
+        "timestamp": 1794182830.857783
+      },
+      "latency_ms": 3.275342000051751,
+      "ok": true
+    },
+    {
+      "request": 99,
+      "http": 201,
+      "report": {
+        "acceptanceOrder": 91,
+        "roomIdentifier": "TEST-101",
+        "observation": "Occupied",
+        "timestamp": 1794182830.8602061
+      },
+      "latency_ms": 2.23827199988591,
+      "ok": true
+    }
+  ]
+}

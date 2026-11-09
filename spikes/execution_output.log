@@ -1,0 +1,34 @@
+{
+  "run_utc": "2026-11-09T00:07:10.981875+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+  },
+  "method": "100 HTTP requests through ten worker threads to a local server; SQLite disposable surrogate; no browser or PostgreSQL",
+  "total_requests": 100,
+  "workers": 10,
+  "persisted_and_verified": 100,
+  "http_successes": 100,
+  "http_successes_within_3s": 100,
+  "average_http_ms": 26.15,
+  "p95_http_ms": 132.227,
+  "checks": {
+    "100 acknowledged reports match persisted rows": true,
+    "100 unique increasing acceptance orders": true,
+    "failed write rolls back without accepting report": true,
+    "three invalid submissions rejected without new rows": true,
+    "equal timestamps resolved by acceptance order": true,
+    "3599 seconds remains reported": true,
+    "3600 seconds becomes Unknown and retains timestamp": true,
+    "missing report becomes Unknown": true
+  },
+  "all_checks_passed": true,
+  "qas01_verified": false,
+  "limitations": [
+    "No browser rendering or visible confirmation measured",
+    "No PostgreSQL transaction or deployed hosting validation",
+    "SQLite serializes all writes, whereas planned design coordinates acceptance per room",
+    "Expiration tested with supplied times, not live browser timers"
+  ]
+}
