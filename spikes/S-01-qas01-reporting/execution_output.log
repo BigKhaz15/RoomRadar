@@ -1,0 +1,11 @@
+============================================================
+S-01: Reporting Service Concurrency & Latency Spike
+============================================================
+Total concurrent submissions:            100
+Submissions confirmed within 3 seconds:  98 out of 100 (98%)
+Average round-trip response time:        420 ms
+P95 round-trip response time:            610 ms
+Failed or timed-out submissions:         0%
+------------------------------------------------------------
+QAS-01 (95% within 3s): PASS
+============================================================
