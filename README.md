@@ -1,61 +1,19 @@
 # RoomRadar
 
-CS 3354 — Software Engineering  
-Fall 2026 · Team 02 · Section 003
+RoomRadar is a proposed web application that helps University of Texas at Dallas students find campus study rooms. Students can browse the room catalog, filter by room features, and view or submit anonymous occupancy reports.
 
-## Project Overview
+Reports show when they were submitted. After 60 minutes, the displayed status becomes **Unknown**. The catalog remains usable without a current report. RoomRadar does not reserve rooms or guarantee availability.
 
-RoomRadar is a proposed web application that helps UT Dallas students find campus study rooms. Students can browse room information, filter by building, capacity, and amenities, and submit reports indicating whether a room is empty or occupied.
+## Project documents
 
-Occupancy reports include timestamps. Reports may be outdated or inaccurate, so RoomRadar does not guarantee current availability or provide room reservations.
+- [P1 baseline](docs/p1/)
+- [P2 report — Analysis and High-Level Design (PDF)](docs/p2/RoomRadar_P2.pdf)
+- [P2 editable report (DOCX)](docs/p2/RoomRadar_P2.docx)
+- [P2 diagrams](docs/p2/diagrams/)
+- [P2 prototype spike and results](spikes/README.md)
 
-## Current Status
+## Prototype spike
 
-P1 has been completed.
+The P2 spike checks report acceptance and expiration using a local Python HTTP server and SQLite. Its results apply to the prototype. The proposed PostgreSQL deployment remains unverified.
 
-## Project Documents
-
-- [Shared working document](https://docs.google.com/document/d/16Q5a5kx3WgLXgeA7EKyivxxjzgiA-b6S/edit?usp=sharing&ouid=117389779057476000695&rtpof=true&sd=true)
-- Milestone document snapshots and the final P1 PDF will be stored in `docs/p1/`.
-
-The Google Doc is our collaborative working draft. Repository copies record milestone versions. The team will verify that the instructor can access both.
-
-## Scope
-
-Planned features:
-
-- Browse a limited catalog of UT Dallas study rooms.
-- View room locations, capacities, and amenities.
-- Filter rooms by building, capacity, and amenities.
-- Submit and view timestamped occupancy reports.
-- Display Unknown when no report exists or the latest report has expired.
-
-Excluded features:
-
-- Room reservations or booking management.
-- Individual seat tracking.
-- Occupancy detection using sensors or cameras.
-- Integration with university booking systems.
-- Guaranteed real-time room availability.
-
-## Team Members
-
-- Adam Khazem
-- Raghameena Ramasubbu
-- Noor Suhwail
-- Roshan Palani
-- Malak Zaarour
-- Tien Nguyen
-- Jeimy Rodriguez
-
-## Collaboration and Contribution Tracking
-
-The team collaborates in the shared Google Doc and uses GitHub issues to track assigned work, questions, and completed contributions.
-
-Each member should document the sections they wrote or revised in the relevant issue. Completed work should include a brief description and a link to the shared document or applicable repository file.
-
-At meaningful checkpoints, the team will export the document and upload an updated copy to `docs/p1/`. Uploads of combined documents will identify them as team work. The P1 contribution table will link to evidence of each member’s actual contributions.
-
-## AI Tool Use
-
-AI assistance used for P1 will be documented in section 4.5 of the project document, including the tool, its purpose, the team member who used it, and how the output was reviewed.
+Developed for CS 3354 — Software Engineering at UT Dallas.
