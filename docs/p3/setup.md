@@ -109,3 +109,34 @@ those components are implemented. No database is required for this starter.
 The final clean-clone check is assigned to Jeimy.
 Her actual commands, environment, results and any failures will be recorded
 under docs/p3/evidence/clean-clone/ and included in Appendix B.
+
+## Database configuration agreement
+
+The application will use PostgreSQL.
+
+- DATABASE_URL identifies the development database.
+- TEST_DATABASE_URL identifies a separate test database.
+- Tests must never reset or clear the development database.
+- Connection handling, schema initialization and seed commands are owned by Roshan.
+- Shared database fixtures and safety checks are coordinated with Malak.
+
+.env.example documents the variable names. The application does not yet
+automatically load .env files.
+
+For Windows PowerShell, set configuration in the same terminal used to
+start the server:
+
+```powershell
+$env:DATABASE_URL = "postgresql://roomradar:YOUR_LOCAL_PASSWORD@localhost:5432/roomradar"
+```
+
+Replace the example with your actual local connection details.
+Do not paste real credentials into issues, screenshots or committed files.
+
+The variable lasts for that terminal session.
+Passwords containing URL-reserved characters require URL encoding.
+
+The starter browser page and /health do not require a database.
+Database-dependent features will require a running PostgreSQL instance.
+PostgreSQL installation, initialization and test commands are still pending
+Roshan's implementation and review.
