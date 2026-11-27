@@ -98,3 +98,36 @@ One StarletteDeprecationWarning concerning httpx and TestClient remains. All tes
 Coverage is not proof of correctness. These preliminary results must not be presented as final integrated application quality measurements.
 
 A reproducible run against the committed test sources will be recorded after committing the new tests.
+
+## 10. Committed-Code Verification
+
+**Date:** November 26, 2026  
+**Branch:** p3/malak  
+**Commit tested:** f029c605e2997e7ea64de0f3aabf14919a677dd0  
+**Working tree before execution:** Clean
+
+### Command
+
+```powershell
+python -m pytest tests/ -v --cov=roomradar --cov-branch --cov-report=term-missing --color=no 2>&1 | Tee-Object -FilePath "docs/p3/evidence/testing/foundation-test-output.txt"
+```
+
+### Actual Results
+
+- Tests collected: 7
+- Tests passed: 7
+- Tests failed: 0
+- Tests skipped: 0
+- Subtests passed: 4
+- Warnings: 1
+- Execution time: 0.32 seconds
+- Exit code: 0
+- Statement coverage: 93%
+- Branch coverage: 0%
+- Combined coverage: 91%
+
+Raw evidence: `docs/p3/evidence/testing/foundation-test-output.txt`
+
+Local directory paths were redacted from the saved transcript. Test results remain unchanged.
+
+The committed-code run reproduces the preliminary foundation coverage measurements. All existing limitations remain applicable, including the absence of PostgreSQL integration verification and business API tests.
