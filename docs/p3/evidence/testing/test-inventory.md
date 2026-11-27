@@ -70,3 +70,28 @@ The four existing starter error-handler tests passed on November 25, 2026, as re
 Any mocked dependencies will be identified in the corresponding test evidence. Mocked storage behavior will not be presented as proof of actual PostgreSQL transaction correctness.
 
 The proposed API contract and optional filter scope must be confirmed before finalizing test implementation. Untested partitions and boundaries will remain marked NONE until corresponding tests exist.
+
+## 6. Implemented Foundation API Tests
+
+The following tests were implemented on November 26, 2026, using the shared TestClient fixture in tests/conftest.py and the actual RoomRadar FastAPI application.
+
+| Test ID | Test function | Expected result | Oracle source | Status |
+|---|---|---|---|---|
+| API-001 | test_api_001_health_endpoint | HTTP 200 and exact JSON response containing status: ok | API contract §3 | PASS |
+| API-002 | test_api_002_homepage | HTTP 200, HTML content type and RoomRadar text | P3 team guide, page 3 | PASS |
+| API-003 | test_api_003_openapi_schema | HTTP 200, RoomRadar application title and registered GET /health endpoint | P3 team guide, page 3; API contract §3 | PASS |
+
+**Implementation files:**
+
+- tests/conftest.py
+- tests/test_api.py
+
+**Supporting evidence:**
+
+- docs/p3/evidence/testing/foundation-test-results.md
+
+The three tests passed individually and as part of the combined seven-test suite.
+
+These tests establish basic application availability and route registration. They do not verify database readiness, catalog filtering, report persistence or occupancy expiration.
+
+The planned INT-01 through INT-20 integration tests remain pending until the required application components and isolated database fixtures are available.
