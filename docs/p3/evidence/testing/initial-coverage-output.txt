@@ -1,0 +1,33 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\malak\Documents\CS3354\RoomRadar\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\malak\Documents\CS3354\RoomRadar
+plugins: anyio-4.16.0, cov-7.1.0
+collecting ... collected 4 items
+
+tests/test_error_handlers.py::ErrorHandlerTests::test_application_errors_use_safe_contract 
+tests/test_error_handlers.py::ErrorHandlerTests::test_application_errors_use_safe_contract PASSED [ 25%]
+tests/test_error_handlers.py::ErrorHandlerTests::test_extra_identity_field_is_rejected_without_echo PASSED [ 50%]
+tests/test_error_handlers.py::ErrorHandlerTests::test_invalid_observation_is_rejected PASSED [ 75%]
+tests/test_error_handlers.py::ErrorHandlerTests::test_valid_observation_is_accepted PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\malak\Documents\CS3354\RoomRadar\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.12.10-final-0 _______________
+
+Name                              Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------
+src\roomradar\__init__.py             0      0      0      0   100%
+src\roomradar\config.py               6      6      2      0     0%   1-13
+src\roomradar\error_handlers.py      22      0      0      0   100%
+src\roomradar\errors.py               3      0      0      0   100%
+src\roomradar\main.py                15     15      0      0     0%   1-24
+src\roomradar\schemas.py             54      1      0      0    98%   16
+-----------------------------------------------------------------------------
+TOTAL                               100     22      2      0    76%
+=============== 4 passed, 1 warning, 4 subtests passed in 0.93s ===============
